@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手风琴</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(rgb(255, 255, 255), green, blue);
+      }
+      .shell {
+        width: 90%;
+        height: 300px;
+        display: flex;
+      }
+      .box {
+        flex: 1;
+        overflow: hidden;
+        transition: 2s;
+        margin: 0 20px;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0.5);
+        border-radius: 20px;
+        border: 10px solid #fff;
+        background-color: #fff;
+      }
+      .box > img {
+        width: 200%;
+        height: 85%;
+        object-fit: cover;
+        transition: 1s;
+      }
+      /* 字体 */
+      .box > span {
+        font: 200 25px "优设标题黑";
+        text-align: center;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box:hover {
+        flex-basis: 40%;
+      }
+      .box:hover > img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="pink">
+    <div class="shell">
+      <div class="box">
+        <img
+          src="https://tse3-mm.cn.bing.net/th/id/OIP-C.6U6ULqdxznzT6wRkVnalGAHaNL?pid=ImgDet&rs=1"
+        />
+        <span>bulid</span>
+      </div>
+      <div class="box">
+        <img
+          src="https://ts1.cn.mm.bing.net/th/id/R-C.cf550e0fc023876d8413fa2708b7850d?rik=hmDmMxvdN6U%2fwg&riu=http%3a%2f%2fwx2.sinaimg.cn%2flarge%2fbfae17b6ly1fjxqha2m05j20px0xch1l.jpg&ehk=fxb7GiRe%2bsR%2fai%2bL77g5brC9imrTWN0jTB3mfztu5S0%3d&risl=&pid=ImgRaw&r=0"
+        />
+        <span>Kabuto</span>
+      </div>
+      <div class="box">
+        <img
+          src="https://ts1.cn.mm.bing.net/th/id/R-C.dcbe1aff23ef98e6351257d8ebddd651?rik=xjhSd92Obk91OQ&riu=http%3a%2f%2fwww.vgfav.com%2fupload%2fuser%2f3%2farticle%2f57bd0593c5a3aa45c3d304d974f84933.JPG&ehk=DAAaA021aSs2TMhfHVh1RCncqiAwn1EoWqdAYy0Dn%2bc%3d&risl=&pid=ImgRaw&r=0"
+        />
+        <span>W</span>
+      </div>
+      <div class="box">
+        <img
+          src="https://pic2.zhimg.com/v2-711de2ce9e45968c1beed38d6d59ba4f_r.jpg?source=172ae18b"
+        />
+        <span>Zreo-one</span>
+      </div>
+      <div class="box">
+        <img
+          src="https://rss.sfacg.com/web/account/images/avatars/app/2106/07/6727d529-c346-4fd9-8a48-3859c5a52520.jpg"
+        />
+        <span>ZIO</span>
+      </div>
+    </div>
+  </body>
+</html>
